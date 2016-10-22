@@ -1,16 +1,12 @@
-###############
-# NAIVE BAYES #
-###############
+##############
+# REGRESSION #
+##############
 
 #Name: 
 #Date: 
 #Summary: This assignment is to 1. demonstrate ggplot 2. demonstrate extrapolations with linear regression
 
 #Today we will use the following two packages
-install.packages("RCurl")
-library("RCurl")
-install.packages("reshape2")
-library("reshape2")
 install.packages("ggplot2")
 library("ggplot2")
 
@@ -141,7 +137,6 @@ newdata <- data.frame(Date=
 )
 newdata$Clinton <- predict(fit.Clinton,newdata=newdata)
 newdata$Sanders <- predict(fit.Sanders,newdata=newdata)
-realclear2 <- rbind(newdata,realclear[train,c(2,5,6)])
 
 p + geom_smooth(aes(x=Date,y=Clinton),method="lm",color="red",se=FALSE) +  
     geom_smooth(aes(x=Date,y=Sanders),method="lm",color="blue",se=FALSE) +
