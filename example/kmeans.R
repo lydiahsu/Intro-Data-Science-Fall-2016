@@ -8,12 +8,14 @@
 
 
 ###read packages
+install.packages("rgeos")
 install.packages("rgdal")
 install.packages("maptools") 
 install.packages("ggplot2")
 install.packages("plyr")
 install.packages("reshape2")
 install.packages("ggmap")
+library("rgeos")
 library("rgdal")
 library("maptools")
 library("ggplot2")
