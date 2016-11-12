@@ -24,7 +24,6 @@ library("reshape2")
 library("ggmap")
 
 #part1: map shapefiles
-setwd("/Users/jauerbach/Dropbox/SHP/")
 dir.create(file.path(getwd(), "shapefiles"))
 temp <- tempfile()
 download.file("http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyct2010_16c.zip", 
