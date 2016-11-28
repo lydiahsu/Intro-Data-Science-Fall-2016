@@ -29,7 +29,7 @@ temp <- tempfile()
 download.file("http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyct2010_16c.zip", 
               temp)
 unzip(temp,exdir="shapefiles")
-tracts <- readOGR("shapefiles/nyct2010_16c/","nyct2010")
+tracts <- readOGR("shapefiles/nyct2010_16c","nyct2010")
 plot(tracts)
 
 tracts@data$id <- rownames(tracts@data)
